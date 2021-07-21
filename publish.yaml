@@ -1,0 +1,14 @@
+Type: Application
+Name: start-node-proxied-invoke
+Provider:
+  - 阿里云 # 阿里云, 百度智能云, 华为云, 腾讯云, AWS, Azure, Google Cloud, 其它
+Version: 0.0.1
+Description: 快速开始一个端云联调案例
+HomePage: 项目首页地址
+Tags: #标签详情
+  - 端云联调
+Category: 基础云服务 # 基础云服务, Web框架, 全栈应用, 人工智能, 音视频处理, 图文处理, 监控告警, 大数据, IoT, 新手入门, 其它
+Service:
+  函数计算:
+    Authorities:
+      - 函数计算全部权限

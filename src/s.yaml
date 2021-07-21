@@ -1,0 +1,19 @@
+edition: 1.0.0
+name: startProxiedInvoke
+access: {{ access|密钥别名 }}
+vars:
+  region: cn-hangzhou
+services:
+  start-proxied-invoke:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: {{ serviceName|服务名称 }}
+        description: hello world
+        internetAccess: true
+      function:
+        name: {{ functionName|函数名称 }}
+        handler: index.handler
+        runtime: nodejs10
+        codeUri: ./
